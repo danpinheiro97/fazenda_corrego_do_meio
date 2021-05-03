@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carrinho.css">
+    <script language="javascript" src="carrinho.js"></script>
+    <title>Carrinho de Compras</title>
+
+</head>
+<body>
+    <header class="header">
+      <div id="identification">
+           <img src="fazenda.svg" alt="fazenda" id="logo">
+           <h1 id="titulologo">Fazenda Córrego do Meio II</h1>
+           <div id="contato">
+             <h2 id="whatsapp">Faça seu Pedido pelo WhatsApp:</h2>
+                    <img src="iconwhats.svg" id="whats">
+                    <h2 id="number">(65)98146-0599</h2>
+                    </div>
+             	<button type="button"><a href="carrinho.html"> Ver Carrinho de compras </a></button>
+             </div>
+      <div class="menubar">
+        <nav id="menu1">
+            
+         
+ 
+          <ul class="menu" type="disc">
+                  <li class="opt" id ="but1"><a href="file:///C:/Users/gusta/source/repos/fazenda_corrego_do_meio/index.html">HOME</a></li>
+              <li class="opt" id ="but1"><a href=http://danielpinheiro.bio.br/>PEIXES</a></li>
+            <li class="opt" id="but2">
+              OVINOS
+              <ul>
+                <li class="opt1" id ="but3"><a href="http://danielpinheiro.bio.br/shannon.html">Índice de Shannon</a></li>
+                <li class="opt1" id ="but3"><a href="http://danielpinheiro.bio.br/simpson.html">Índice de Simpson</a></li>
+              </ul>
+            </li>
+          <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">HORTALIÇAS</a></li>
+              <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">AVES</a></li>
+                  <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">FRUTAS</a></li>
+                      <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">VERDURAS & LEGUMES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<div id="itens">
+
+</div>
+
+<div>Total: <span id="total"></span> </div>
+
+<script>
+ var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+ var i = 0;     // variável que irá percorrer as posições
+ var valor = 0; // variável que irá receber o preço do produto convertido em Float.
+ 
+ for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
+ {
+	 var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+	 if(prod != null) 
+	 {	
+		 // exibe os dados da lista dentro da div itens
+		 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
+		 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+		 document.getElementById("itens").innerHTML += " ";
+		 document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+		 
+		 // calcula o total dos recheios
+		 valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+		 total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
+	 }
+ } 
+ // exibe o total dos recheios
+ document.getElementById("total").innerHTML = total.toFixed(2);
+
+
+
+
+</script>
+ <button><a id="whatsapp-share-btt" rel="nofollow" target="_blank">WhatsApp</a> </button>
+
+<button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+    
+</body>
+</html>

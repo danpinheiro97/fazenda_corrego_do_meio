@@ -1,9 +1,6 @@
-@charset "UTF-8";
-
-
 body
 {
-    background-color:#EDEDE3;
+    background-color:#F2F2F2;
     background-size: cover;
     background-size: 900px;
     min-height: 100vh;
@@ -20,6 +17,7 @@ body
 
 header{
     height:8em;
+    
 }
 
 @media (max-width:767.98px){
@@ -31,17 +29,20 @@ header{
     }
 
 }
+div#identification{
+    display: inline-flex;
+    height:60%;
+}
 
 .menubar{
     display: flex;
     justify-content: center;
     position: relative;
-    width:100%;
-    background-color:#EDEDE3;
-    border-bottom: 1px solid #5E5341;
-        border-top: 1px solid #5E5341;
+    width: 100%;
+    background-color: #334003;
     border-radius: 2px;
-    bottom: 100%;
+    bottom: 30%;
+      border-radius: 5px;
 
 }
 @media (max-width:767.98px){
@@ -55,19 +56,55 @@ header{
 
 img#logo{
     width:10%;
+    height: 140%;
     position: relative;
     bottom:25%;
     
 }
 
 h1#titulologo{
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    position: relative;
+    font-size: 20pt;
+    width: 70%;
+    height: 31%;
+}
+div#contato{
+    width: 54%;
+    display: inline-flex;
+    margin-right: 1%;
+}
+
+img#whats{
+  width: 19%;
+    margin-right: -5%;
+    margin-left: -5%;
+    height: 5em;
+    position: relative;
+    bottom: 0%;
+}
+
+
+h2#whatsapp{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     position: relative;
-    bottom:100%;
-    left:10%;
-    font-size: 20pt;
-    width: fit-content;
+    top: 16%;
+    font-size: 13pt;
+    width: 50%;
+    height: fit-content;
+
+}
+h2#number{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    position: relative;
+    top: 16%;
+    font-size: 13pt;
+    width: 32%;
+    height: fit-content;
+
 }
 nav#menu1{
     list-style: none;
@@ -75,6 +112,8 @@ nav#menu1{
     text-align: center;
     width: 100%;
     height:fit-content;
+  
+
 
 }
 
@@ -86,7 +125,8 @@ nav#menu1{
 nav#menu1 li{
     display: inline-block;
     padding-right: 5%;
-
+    
+      
     
 }
 @media (max-width:767.98px){
@@ -167,7 +207,7 @@ nav#menu1 li:hover{
     text-align: right;
     background-color: #E1DCC6;
     font-style: none;
-    border: 1px solid #5E5341;
+    border: 1px solid #C6D58C;
     border-radius: 8px;
     z-index: 2;
       
@@ -211,13 +251,13 @@ nav#menu1 li:hover{
 
 .opt{
    font-family: 'Source Sans Pro', sans-serif;
-    color:#5E5341;
+    color:#C6D58C;
     font-weight: bolder;
 
 }
 .menu a{
     text-decoration: none;
-    color:#5E5341;
+    color:#C6D58C;
 }
 
 
@@ -267,56 +307,3 @@ img#leaf2{
         z-index: 1;
         
     }}
-section#main{
-    width: 100%;
-    height: 34em;
-    bottom: 0em;
-    position: relative;
-}
-
-div#information{
-    
-    width:100%;
-    height:4em;
-    top:2em;
-}
-
-h1#h1{
-    position: relative;
-    font-size: 13pt;
-    width: fit-content;
-}
-h2#h2{
-    position: relative;
-    bottom:35%;
-    left:12%;
-    font-size: 13pt;
- width: fit-content;}
-h1#h3{
-     font-size: 13pt;
-    position: relative;
-    bottom: 154%;
-    left: 47%;
-    width: fit-content;
-}
-h2#h4{
-   font-size: 13pt;
-    position: relative;
-    bottom: 214%;
-    left: 46%;
-    width: fit-content;
-}
-h1#h5{
-    font-size: 13pt;
-    position: relative;
-    bottom:180%;
-    left:80%;
-     width: fit-content;
-}
-h2#h6{
-    font-size: 13pt;
-    position: relative;
-    bottom:188%;
-    left: 74%;
-     width: fit-content;
-}

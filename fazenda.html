@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda Córrego do Meio II</title>
+    <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+    <header class="header">
+      <div id="identification">
+           <img src="fazenda.svg" alt="fazenda" id="logo">
+           <h1 id="titulologo">Fazenda Córrego do Meio II</h1>
+           <div id="contato">
+             <h2 id="whatsapp">Faça seu Pedido pelo WhatsApp:</h2>
+                    <img src="iconwhats.svg" id="whats">
+                    <h2 id="number">(65)98146-0599</h2>
+                    </div>
+             	<button type="button"><a href="carrinho.html"> Ver Carrinho de compras </a></button>
+             </div>
+      <div class="menubar">
+        <nav id="menu1">
+         
+ 
+          <ul class="menu" type="disc">
+                  <li class="opt" id ="but1"><a href="file:///C:/Users/gusta/source/repos/fazenda_corrego_do_meio/index.html">HOME</a></li>
+              <li class="opt" id ="but1"><a href=http://danielpinheiro.bio.br/>PEIXES</a></li>
+            <li class="opt" id="but2">
+              OVINOS
+              <ul>
+                <li class="opt1" id ="but3"><a href="http://danielpinheiro.bio.br/shannon.html">Índice de Shannon</a></li>
+                <li class="opt1" id ="but3"><a href="http://danielpinheiro.bio.br/simpson.html">Índice de Simpson</a></li>
+              </ul>
+            </li>
+          <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">HORTALIÇAS</a></li>
+              <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">AVES</a></li>
+                  <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">FRUTAS</a></li>
+                      <li  class="opt" id ="but5"><a href="http://danielpinheiro.bio.br/perfil.html">VERDURAS & LEGUMES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="main">
+        <div id="information">
+          <div id="info1">
+           <h1 class="h">Taxa de Entrega em Primavera do Leste e Poxoréo</h1>  
+            <h2 class="h">R$5,00</h2>
+            </div>
+            <div id="info2">
+        <h1 class="h">PAGAMENTO</h1>
+        <h2 class="h">PIX - Dinheiro</h2>
+        </div>
+        <div id="info3">
+        <h1 class="h">Entrega a partir das 10:00hs da manhã</h1>
+        <h2 class="h"><a href="" class="h">Entenda como funciona!</a></h2>
+        </div>
+        </div>
+        <hr>
+        <hr>
+
+        <div id="products">
+          
+<div align="center">
+  <img src="" alt="">
+	Sabão <strong>R$ 2,00</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Sabão', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+</div>
+
+<div align="center">
+	<br>Macarrão <strong>R$ 3,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macarrão', document.getElementById('qtd2').value, '3.90', 2)"> Comprar </button>
+</div>
+
+<div align="center">
+	<br>Feijão <strong>R$ 11,90</strong><br>
+	qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
+	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Feijão', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+</div>
+
+<p align="center">
+
+</p>	
+		
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+  localStorage.setItem("produto" + posicao, produto);
+  localStorage.setItem("qtd" + posicao, qtd);
+  valor = valor * qtd;
+  localStorage.setItem("valor" + posicao, valor);
+  alert("Produto adicionado ao carrinho!");
+	}
+</script>
+
+
+
+
+    </section>
+
+    <footer id="down">
+
+    </footer>
+
+
+    
+</body>
+</html>
