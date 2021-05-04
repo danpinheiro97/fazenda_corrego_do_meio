@@ -19,7 +19,8 @@
                     <img src="iconwhats.svg" id="whats">
                     <h2 id="number">(65)98146-0599</h2>
                     </div>
-             	<button type="button"><a href="carrinho.html"> Ver Carrinho de compras </a></button>
+                    <img src="carrinho.svg" alt="" id="carrinhoverde">
+             	<button type="button" id="bucarrinho"><a href="carrinho.html" id="acarrinho">Carrinho de compras</a></button>
              </div>
       <div class="menubar">
         <nav id="menu1">
@@ -45,11 +46,30 @@
       </div>
     </header>
 
+<div id="form">
+  <h1 id="titulo1">Por favor, preencher corretamente para não ocorrer problemas na entrega</h1>
+  <form action="">
+    <label for="nome" class="labels">Nome</label><br><input type="text" id="nome" placeholder="Fabrício" onchange="texto()" class="inputs"><br>
+    <label for="sobrenome" class="labels">Sobrenome</label><br><input type="text" id="sobrenome" placeholder="Silva" onchange="texto()" class="inputs"><br>
+    <label for="cep" class="labels">CEP</label><br><input type="number" placeholder="78987-987" onchange="texto()" id="cep" class="inputs"><br>
+    <label for="cidade" class="labels">Cidade</label><br><input type="text" placeholder="Primavera do Leste" onchange="texto()" id="cidade" class="inputs"><br>
+    <label for="bairro" class="labels">Bairro</label><br><input type="text" placeholder="Poncho Verde" onchange="texto()" id="bairro" class="inputs"><br>
+    <label for="rua" class="labels">Rua</label><br><input type="text" placeholder="Chimarrita" onchange="texto()" id="rua" class="inputs"><br>
+    <label for="quadra" class="labels">Quadra</label><br><input type="number" placeholder="9999" onchange="texto()" id="quadra" class="inputs"><br>
+    <label for="numero" class="labels">Número</label><br><input type="number" placeholder="9999" onchange="texto()" id="numero" class="inputs"><br>
+    <label for="pagamento" class="labels">Pagamento:</label><br><input type="text" placeholder="PIX ou Dinheiro" onchange="texto()" id="pagamento" class="inputs">
+    <button type="button" id="buttonform" onclick="frase()">Salvar</button>
+
+  </form>
+</div>
 <div id="itens">
+  <h1>Carrinho de Compras</h1>
+  
 
 </div>
 
-<div>Total: <span id="total"></span> </div>
+<div id="totalspan">Total: <span id="total"></span> </div>
+
 
 <script>
  var total = 0; // variável que retorna o total dos produtos que estão na sessionStorage.
@@ -62,6 +82,7 @@
 	 if(prod != null) 
 	 {	
 		 // exibe os dados da lista dentro da div itens
+     
 		 document.getElementById("itens").innerHTML += sessionStorage.getItem("qtd" + i) + " x ";
 		 document.getElementById("itens").innerHTML += sessionStorage.getItem("produto" + i);
 		 document.getElementById("itens").innerHTML += " ";
@@ -81,9 +102,9 @@
 
 
 </script>
- <button><a id="whatsapp-share-btt" rel="nofollow" target="_blank">WhatsApp</a> </button>
+ <button id="whatsapp" type="button" onclick="whatsapp()"><a id="whatsapp-button" rel="nofollow" target="_blank">WhatsApp</a></button>
 
-<button type="button" onclick=" sessionStorage.clear(); location.reload();"> Limpar carrinho </button>
+<button id="clean" type="button" onclick=" sessionStorage.clear(); location.reload();"> Limpar carrinho </button>
     
 </body>
 </html>
