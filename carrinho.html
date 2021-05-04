@@ -52,28 +52,30 @@
 <div>Total: <span id="total"></span> </div>
 
 <script>
- var total = 0; // variável que retorna o total dos produtos que estão na LocalStorage.
+ var total = 0; // variável que retorna o total dos produtos que estão na sessionStorage.
  var i = 0;     // variável que irá percorrer as posições
  var valor = 0; // variável que irá receber o preço do produto convertido em Float.
  
- for(i=1; i<=99; i++) // verifica até 99 produtos registrados na localStorage
+ for(i=1; i<=99; i++) // verifica até 99 produtos registrados na sessionStorage
  {
-	 var prod = localStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
+	 var prod = sessionStorage.getItem("produto" + i + ""); // verifica se há recheio nesta posição. 
 	 if(prod != null) 
 	 {	
 		 // exibe os dados da lista dentro da div itens
-		 document.getElementById("itens").innerHTML += localStorage.getItem("qtd" + i) + " x ";
-		 document.getElementById("itens").innerHTML += localStorage.getItem("produto" + i);
+		 document.getElementById("itens").innerHTML += sessionStorage.getItem("qtd" + i) + " x ";
+		 document.getElementById("itens").innerHTML += sessionStorage.getItem("produto" + i);
 		 document.getElementById("itens").innerHTML += " ";
-		 document.getElementById("itens").innerHTML += "R$: " + localStorage.getItem("valor" + i) + "<hr>";
+		 document.getElementById("itens").innerHTML += "R$: " + sessionStorage.getItem("valor" + i) + "<hr>";
 		 
 		 // calcula o total dos recheios
-		 valor = parseFloat(localStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
+		 valor = parseFloat(sessionStorage.getItem("valor" + i)); // valor convertido com o parseFloat()
 		 total = (total + valor); // arredonda para 2 casas decimais com o .toFixed(2)
 	 }
  } 
  // exibe o total dos recheios
- document.getElementById("total").innerHTML = total.toFixed(2);
+ document.getElementById("total").innerHTML = "<span id='totalw'>" +total.toFixed(2).toString() + "</span>";
+ var totalw = document.getElementById("totalw").innerHTML
+ sessionStorage.setItem("total", totalw )
 
 
 
@@ -81,7 +83,7 @@
 </script>
  <button><a id="whatsapp-share-btt" rel="nofollow" target="_blank">WhatsApp</a> </button>
 
-<button type="button" onclick=" localStorage.clear(); location.reload();"> Limpar carrinho </button>
+<button type="button" onclick=" sessionStorage.clear(); location.reload();"> Limpar carrinho </button>
     
 </body>
 </html>

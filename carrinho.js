@@ -1,14 +1,19 @@
-
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener(
+  "DOMContentLoaded",
+  function () {
     var conteudo = "";
- for (i = 1; i <= 3; i++){
-    conteudo += localStorage.getItem("qtd"+i) + "X";
-    conteudo += localStorage.getItem("produto"+i);
-    conteudo += localStorage.getItem("valor" + i);
+    var tamanho = sessionStorage.length / 3
 
- 
-}
-document.getElementById("whatsapp-share-btt").href =
-  "https://api.whatsapp.com/send?text=" + conteudo;
-}, false);
+    for (i = 1; i <= tamanho; i++) {
+      conteudo += sessionStorage.getItem("qtd" + i) + "X";
+      conteudo += sessionStorage.getItem("produto" + i);
+      conteudo += sessionStorage.getItem("valor" + i);
+      
 
+    }
+    conteudo += sessionStorage.getItem("total")
+    document.getElementById("whatsapp-share-btt").href =
+      "https://api.whatsapp.com/send?text=" + conteudo;
+  },
+  false
+);
