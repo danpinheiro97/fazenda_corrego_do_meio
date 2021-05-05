@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fazenda Córrego do Meio II</title>
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="fazenda.css">
 
 </head>
 <body>
-    <header class="header">
+   <header class="header">
+     <div id="sky">
+            <h1 class="h">Taxa de Entrega em Primavera do Leste e Poxoréo</h1>
+                  <h1 class="h">R$5,00               Entrega a partir das 10:00hs da manhã</h1>
+                          <h1 class="h"><a href="" class="h">Entenda como funciona!</a></h1>
+             
+     </div>
       <div id="identification">
            <img src="fazenda.svg" alt="fazenda" id="logo">
            <h1 id="titulologo">Fazenda Córrego do Meio II</h1>
@@ -18,14 +24,16 @@
                     <img src="iconwhats.svg" id="whats">
                     <h2 id="number">(65)98146-0599</h2>
                     </div>
-             	<button type="button"><a href="carrinho.html"> Ver Carrinho de compras </a></button>
+                
+             	<button type="button" id="bucarrinho"><img src="carrinho.svg" alt="" id="carrinhoverde"><a href="carrinho.html" id="acarrinho">Carrinho</a></button>
              </div>
       <div class="menubar">
         <nav id="menu1">
+            
          
  
           <ul class="menu" type="disc">
-                  <li class="opt" id ="but1"><a href="file:///C:/Users/gusta/source/repos/fazenda_corrego_do_meio/index.html">HOME</a></li>
+                  <li class="opt" id ="but1"><a href="file:///C:/Users/gusta/source/repos/indices-bioestatistica/Loja%20Fazenda/fazenda.html">HOME</a></li>
               <li class="opt" id ="but1"><a href=http://danielpinheiro.bio.br/>PEIXES</a></li>
             <li class="opt" id="but2">
               OVINOS
@@ -43,48 +51,47 @@
       </div>
     </header>
     <section id="main">
-        <div id="information">
-          <div id="info1">
-           <h1 class="h">Taxa de Entrega em Primavera do Leste e Poxoréo</h1>  
-            <h2 class="h">R$5,00</h2>
-            </div>
-            <div id="info2">
-        <h1 class="h">PAGAMENTO</h1>
-        <h2 class="h">PIX - Dinheiro</h2>
-        </div>
-        <div id="info3">
-        <h1 class="h">Entrega a partir das 10:00hs da manhã</h1>
-        <h2 class="h"><a href="" class="h">Entenda como funciona!</a></h2>
-        </div>
-        </div>
-        <hr>
-        <hr>
-
+      
         <div id="products">
           
-<div align="center">
-  <img src="" alt="">
-	Sabão <strong>R$ 2,00</strong><br>
-	qtd: <input type="number" value="1" min="1" max="10" id="qtd1">
-	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Sabão', document.getElementById('qtd1').value, '2.00', 1)"> Comprar </button>
+<div id="cebolinhas">
+  <img src="cebolinha.jpg" id="cebolinha">
+  <div id="tcebolinha">  
+  <a href="file:///C:/Users/gusta/source/repos/indices-bioestatistica/Loja%20Fazenda/cebolinha.html"><strong>CEBOLINHA VERDE</strong><br></a><span><strong> R$ 2,00</strong></span><br><label for="qtd1" id="labelqtd1" >Quantidade:</label>
+	<input class="inputs" type="number" value="1" min="1" max="10" id="qtd1">
+	<button class="botoes" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Cebolinha', document.getElementById('qtd1').value, '2.50', 1)"><strong>Adicionar ao carrinho</button>
+  </div>
 </div>
 
-<div align="center">
-	<br>Macarrão <strong>R$ 3,90</strong><br>
-	qtd: <input type="number" value="1" min="1" max="10" id="qtd2">
-	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Macarrão', document.getElementById('qtd2').value, '3.90', 2)"> Comprar </button>
+<div id="tambatingas">
+  <img src="tambatinga.jpg" id="tambatinga">
+  <div id="ttambatinga">  
+  <a href="file:///C:/Users/gusta/source/repos/indices-bioestatistica/Loja%20Fazenda/cebolinha.html"><strong>TAMBATINGA</strong><br></a><span><strong> R$ 19,00 Kg</strong></span><br><label for="qtd1" id="labelqtd1" >Quantidade:</label>
+	<input class="inputs" type="number" value="1" min="1" max="10" id="qtd2">
+	<button class="botoes" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Kg Tambatinga ', document.getElementById('qtd2').value, '19.00', 2)"><strong>Adicionar ao carrinho</strong></button>
+  </div>
 </div>
 
-<div align="center">
-	<br>Feijão <strong>R$ 11,90</strong><br>
-	qtd: <input type="number" value="1" min="1" max="10" id="qtd3">
-	<button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Feijão', document.getElementById('qtd3').value, '11.90', 3)"> Comprar </button>
+<div id="maxixes">
+  <img src="maxixe.jpg" id="maxixe">
+  <div id="tmaxixe">  
+  <a href="file:///C:/Users/gusta/source/repos/indices-bioestatistica/Loja%20Fazenda/cebolinha.html"><strong>MAXIXE</strong><br></a><span><strong> R$ 5,00 Kg</strong></span><br><label for="qtd1" id="labelqtd1" >Quantidade:</label>
+	<input class="inputs" type="number" value="1" min="1" max="10" id="qtd3">
+	<button class="botoes" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Kg Maxixe ', document.getElementById('qtd3').value, '5.00', 3)"><strong>Adicionar ao carrinho</strong></button>
+  </div>
 </div>
 
-<p align="center">
+<div id="maracujas">
+  <img src="maracuja.jpg" id="maracuja">
+  <div id="tmaracuja">  
+  <a href="file:///C:/Users/gusta/source/repos/indices-bioestatistica/Loja%20Fazenda/cebolinha.html"><strong>MARACUJA</strong><br></a><span><strong> R$ 7,00 Kg</strong></span><br><label for="qtd1" id="labelqtd1" >Quantidade:</label>
+	<input class="inputs" type="number" value="1" min="1" max="10" id="qtd4">
+	<button class="botoes" type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Kg Maracujá ', document.getElementById('qtd4').value, '7.00', 4)"><strong>Adicionar ao carrinho</strong></button>
+  </div>
+</div>
 
-</p>	
-		
+
+
 <script>
 	function AddCarrinho(produto, qtd, valor, posicao)
 	{
