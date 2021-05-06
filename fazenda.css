@@ -13,7 +13,7 @@ background-color: #F2F2F2;
 @media (max-width:767.98px){
     body{
         margin: 0 auto;
-        width: 22.5em;
+        width: 77%;
 
     }
 }
@@ -38,9 +38,9 @@ div#flutuante{
 
 @media (max-width:767.98px){
     div#flutuante{
-    display: block;
+      display: block;
     width: 23%;
-    left: 75%;
+    left: 85%;
     bottom: 84.7%;
     position: fixed;
     z-index: 2;
@@ -62,11 +62,11 @@ ul#menuflu{
     ul#menuflu{
     position: fixed;
     top: 11%;
-    left: 45%;
+    left: 53%;
     width: 35%;
     background-color: #F29F05;
     font-size: 12pt;
-    height: 12em;
+    height: fit-content;
     list-style: none;
     font-size: 12pt;
     list-style: none;
@@ -83,13 +83,19 @@ ul#menuflu li{
  
 @media (max-width:767.98px){
     ul#menuflu li{   
-    margin-left: 16%;
-    margin-top: 1.9%;}}
+    margin-left: 25%;
+    margin-top: 5%;}}
     
     
 
 div#flutuante:hover div#menuflutuante{
     display: block;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 0.3rem;
 }
 
 
@@ -104,9 +110,9 @@ div#sky{
 }
 @media (max-width:767.98px){
     div#sky{
-      margin-left: -2%;
-    width: 103.7%;
+    width: 129.9%;
     height: 4.5em;
+    margin-left: -15%;
     }}
 
 div#sky h1{
@@ -189,16 +195,21 @@ div#identification{
     }}
 
 img#logo{
-    width:10%;
+        width: 10%;
     height: 140%;
     position: relative;
-    bottom:25%;
-    margin-left: 1%;
+    bottom: 25%;
+    left:1%;
+ 
+
     
 }
 @media (max-width:767.98px){
     img#logo{
-        width:25%;
+        width: 25%;
+    right: 0%;
+    position: relative;
+    left: -12%;
     }}
 
 h1#titulologo{
@@ -211,21 +222,25 @@ h1#titulologo{
 }
 @media (max-width:767.98px){
     h1#titulologo{
-      margin-top: -17%;
+    margin-top: -18%;
     font-size: 16pt;
     width: 12em;
-    margin-left: 26%;
+    left: 14%;
 }
-    }
+}
 div#contato{
-    width: 60%;
+    width: 97%;
     display: inline-flex;
-    margin-left: 0%;
+
 }
 @media (max-width:767.98px){
     div#contato{
-        width: 100%;
-    }}
+    width: 100%;
+    left: -15%;
+    position: relative;
+}
+}
+    
 
 img#whats{
       width: 13%;
@@ -237,42 +252,50 @@ img#whats{
 }
 @media (max-width:767.98px){
     img#whats{
-        display: none;
+    position: absolute;
+    margin-right: 0%;
+    margin-left: 0%;
+    left: 73%;
+    width: 19%;
+    bottom: 0%;
     }}
 
 
 h2#whatsapp{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     position: relative;
     top: 16%;
     font-size: 13pt;
-
-    width: 50%;
+    width: 41%;
     height: fit-content;
 
 }
 @media (max-width:767.98px){
     h2#whatsapp{
-     font-size: 12pt;
-    width: 61%;
+  font-size: 12pt;
+    width: 51%;
+    left: 5%;
     }}
 h2#number{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: lighter;
     position: relative;
     top: 16%;
     font-size: 13pt;
-      margin-left:3%;
+    margin-left:3%;
     width: 32%;
     height: fit-content;
 
 }
 @media (max-width:767.98px){
     h2#number{
-      width: 7em;
+    width: 7em;
     font-size: 12pt;
+    left: 34%;
+    margin-top: 6%;
 }
+
 }
 
 nav#menu1{
@@ -282,8 +305,6 @@ nav#menu1{
     width: 100%;
     height:fit-content;
   
-
-
 }
 
 @media (max-width:767.98px){
@@ -402,38 +423,71 @@ img#leaf2{
         
     }}
 
-    button#bucarrinho{
-            display: inline-flex;
-    width: 15%;
+    a#bucarrinho{
+    display: inline-flex;
+    width: 20%;
     margin-top: 1%;
     height: 3em;
     background-color: #3E5903;
     border-radius: 5px;
     border: none;
-    }
+    text-decoration: none;
+    color: #C6D58C;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}       
 
     @media (max-width:767.98px){
-        button#bucarrinho{
-    width: 10em;
+        a#bucarrinho{
+    display: none;
 
         }}
-       button#bucarrinho:hover{
-           background-color:#F27405;
-         
+       a#bucarrinho:hover{
+           background-color:#F29F05;
+           color:#3E5903;
        }
 
-    a#acarrinho{
-      text-decoration: none;
-    color: #C6D58C;
-    margin-top: 10%;
-    margin-right: 13%;
-    }
 
     img#carrinhoverde{
  width: 39%;
     height: 3em;
     margin-bottom: 0%;
-    margin-right: 17%;
+
+    }
+    
+    a#bucarrinho2{
+    display: inline-flex;
+    width: 120%;
+    margin-top: 70%;
+    height: 3em;
+    background-color: #3E5903;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    color: #C6D58C;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}       
+
+    @media (max-width:767.98px){
+        a#bucarrinho2{
+        position: relative;
+        right: 65%;
+
+        }}
+       a#bucarrinho:hover{
+           background-color:#F29F05;
+           color:#3E5903;
+       }
+
+
+    img#carrinhoverde{
+ width: 39%;
+    height: 3em;
+    margin-bottom: 0%;
+
     }
 
 section#main{
@@ -442,6 +496,10 @@ section#main{
     top: 0.5em;
     position: relative;
 }
+  @media (max-width:767.98px){
+section#main{
+    right: 10%;
+    width: 121%;}}
 
 div#products{
     margin-top: 3%;
@@ -476,9 +534,15 @@ width: 20%;
 
 img#cebolinha{
 width: 85%;
-margin-left:5%;
+margin-left:5%;}
 
 
+@media (max-width:767.98px){
+
+img#cebolinha{
+    width: 50%;
+    height: 100%;
+    margin-left: 0%;}
 }
 
 
@@ -488,6 +552,16 @@ div#cebolinhas{
     background-color: white;
     margin-left: 2%;
 }
+  @media (max-width:767.98px){
+div#cebolinhas{
+
+    position: relative;
+    width: 96%;
+    height: 9em;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+}}
 
 div#cebolinhas:hover{
         box-shadow: 0 0 10px 2px rgb(124 124 124 / 20%);
@@ -500,6 +574,16 @@ div#tcebolinha{
     margin-left:10%;
     
 }
+ @media (max-width:767.98px){
+div#tcebolinha{
+
+position: relative;
+    width: 49%;
+    left: -1%;
+    margin-left: 50%;
+    margin-top: 0%;
+    bottom: 97%;
+}}
 div#tcebolinha a{
     width: fit-content;
     display: block;
@@ -562,9 +646,15 @@ hr#dois{
 }
 img#tambatinga{
 width: 85%;
-margin-left:5%;
+margin-left:5%;}
 
 
+@media (max-width:767.98px){
+
+img#tambatinga{
+    width: 50%;
+    height: 100%;
+    margin-left: 0%;}
 }
 
 
@@ -572,27 +662,46 @@ div#tambatingas{
     width: 21%;
     height: 23em;
     background-color: white;
-    margin-left: 26%;
-    margin-top: -27.6%;
+    margin-left: 2%;
 }
+  @media (max-width:767.98px){
+div#tambatingas{
+    position: relative;
+    width: 96%;
+    height: 9em;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-top:3%;
+}}
 
 div#tambatingas:hover{
         box-shadow: 0 0 10px 2px rgb(124 124 124 / 20%);
 }
 
-div#ttambatinga{
-    font-family: 'Source Sans Pro', sans-serif;
+div#tambatinga{
+     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-top: -7%;
-    margin-left: 12%;
+    margin-top:10%;
+    margin-left:10%;
     
 }
+ @media (max-width:767.98px){
+div#ttambatinga{
+
+position: relative;
+    width: 49%;
+    left: -1%;
+    margin-left: 50%;
+    margin-top: 0%;
+    bottom: 97%;
+}}
 div#ttambatinga a{
-      width: fit-content;
+    width: fit-content;
     display: block;
     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-left: 22%;
+    margin-left: 13%;
     text-decoration: none;
     
 }
@@ -604,14 +713,24 @@ div#ttambatinga a:hover{
 
 }
 div#ttambatinga span{
-    margin-left:26%;
+    margin-left:30%;
 }
 
+
+div#tmaxixe span{
+    margin-left:29%;
+}
 img#maxixe{
 width: 85%;
-margin-left:5%;
+margin-left:5%;}
 
 
+@media (max-width:767.98px){
+
+img#maxixe{
+    width: 50%;
+    height: 100%;
+    margin-left: 0%;}
 }
 
 
@@ -619,27 +738,47 @@ div#maxixes{
     width: 21%;
     height: 23em;
     background-color: white;
-    margin-left: 50%;
-    margin-top: -27.6%;
+    margin-left: 2%;
 }
+  @media (max-width:767.98px){
+div#maxixes{
+
+    position: relative;
+    width: 96%;
+    height: 9em;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+        margin-top:3%;
+}}
 
 div#maxixes:hover{
         box-shadow: 0 0 10px 2px rgb(124 124 124 / 20%);
 }
 
-div#tmaxixe{
-    font-family: 'Source Sans Pro', sans-serif;
+div#maxixe{
+     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-top: -7%;
-    margin-left: 10%;
+    margin-top:10%;
+    margin-left:10%;
     
 }
+ @media (max-width:767.98px){
+div#tmaxixe{
+
+position: relative;
+    width: 49%;
+    left: -1%;
+    margin-left: 50%;
+    margin-top: 0%;
+    bottom: 97%;
+}}
 div#tmaxixe a{
-      width: fit-content;
+    width: fit-content;
     display: block;
     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-left: 32%;
+    margin-left: 13%;
     text-decoration: none;
     
 }
@@ -651,54 +790,83 @@ div#tmaxixe a:hover{
 
 }
 div#tmaxixe span{
-    margin-left:29%;
+    margin-left:30%;
 }
-
 img#maracuja{
 width: 85%;
-margin-left:5%;
+margin-left:5%;}
 
 
+@media (max-width:767.98px){
+
+img#maracuja{
+    width: 50%;
+    height: 100%;
+    margin-left: 0%;}
 }
+
 
 div#maracujas{
     width: 21%;
     height: 23em;
     background-color: white;
-    margin-left: 74%;
-    margin-top: -27.6%;
+    margin-left: 2%;
 }
+  @media (max-width:767.98px){
+div#maracujas{
+
+    position: relative;
+    width: 96%;
+    height: 9em;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 2%;
+        margin-top:3%;
+}}
 
 div#maracujas:hover{
         box-shadow: 0 0 10px 2px rgb(124 124 124 / 20%);
 }
 
-div#tmaracuja{
-    font-family: 'Source Sans Pro', sans-serif;
+div#maracuja{
+     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-top: -7%;
-    margin-left: 10%;
+    margin-top:10%;
+    margin-left:10%;
     
 }
+ @media (max-width:767.98px){
+div#tmaracuja{
+position: relative;
+    width: 49%;
+    left: -1%;
+    margin-left: 50%;
+    margin-top: 0%;
+    bottom: 97%;
+}}
 div#tmaracuja a{
-      width: fit-content;
+    width: fit-content;
     display: block;
     font-family: 'Source Sans Pro', sans-serif;
     color: #455F44;
-    margin-left: 27%;
+    margin-left: 13%;
     text-decoration: none;
     
 }
 
-div#tmmaracuja a:hover{
+div#tmaracuja a:hover{
     background-color: #455F44;
     color:white;
     transition: 0.5s;
 
 }
 div#tmaracuja span{
-    margin-left:29%;
+    margin-left:30%;
 }
+
+
+
+
 
 footer#down{
     margin-left: 6%;
